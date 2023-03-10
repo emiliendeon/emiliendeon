@@ -1,0 +1,25 @@
+.samples {
+	position: relative;
+	flex: 0 0 auto;
+	width: 600px;
+	height: 440px;
+
+	@media screen and (max-width: 1399px) {
+		transform: scale(0.8);
+	}
+
+	@media screen and (max-width: 767px) {
+		margin: -22px 0;
+		transform: scale(0.7);
+	}
+
+	@media screen and (max-width: 575px) {
+		margin: -44px 0;
+		transform: scale(0.6);
+	}
+
+	@media screen and (max-width: 479px) {
+		margin: -66px 0;
+		transform: scale(0.5);
+	}
+}

@@ -1,0 +1,36 @@
+@use "src/colors" as colors;
+
+.contact {
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	max-width: 360px;
+	margin-top: 64px;
+	padding: 24px 16px 16px;
+	border: 1px solid #ffffff;
+
+	h2 {
+		position: absolute;
+		top: -20px;
+		left: calc(50% - 100px);
+		width: 200px;
+		background-color: colors.$primary;
+		text-align: center;
+	}
+
+	> a {
+		width: 64px !important;
+		height: 64px !important;
+		margin: 8px;
+	}
+
+	@media screen and (max-width: 1199px) {
+		width: 360px;
+	}
+
+	@media screen and (max-width: 479px) {
+		width: 100%;
+		max-width: none;
+	}
+}
